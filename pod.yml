@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ingress
+  namespace: ingress-nginx
+  labels:
+    app: django-blog
+spec: 
+    containers:
+    - name: paras-portfolio
+      image: raghavkhurana21/raghav2:1.0
+      ports:
+      - containerPort: 8000
+      
